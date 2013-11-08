@@ -36,112 +36,112 @@ void translateIR(){
     case 0x20FFE817: // 7
       break;
     
-    case ox20FF18E7: // 8
+    case 0x20FF18E7: // 8
       break;
     
-    case 20FF9867: // 9
+    case 0x20FF9867: // 9
       break;
     
-    case 20FF08F7: // 0
-      break;
-    
-    
-    case 20FF7887: // redo
-      break;
-    
-    case 20FF906F: // fav
-      break;
-    
-    case 20FF58A7: // menu
-      break;
-    
-    case 20FF38C7: // exit
-      break;
-    
-    case 20FFD827: // epg
-      break;
-    
-    case 20FFB847: // info
+    case 0x20FF08F7: // 0
       break;
     
     
-    case 20FF00FF: // up
+    case 0x20FF7887: // redo
       break;
     
-    case 20FF807F: // down
+    case 0x20FF906F: // fav
       break;
     
-    case 20FFC03F: // left
+    case 0x20FF58A7: // menu
       break;
     
-    case 20FF40BF: // right
+    case 0x20FF38C7: // exit
       break;
     
-    case 20FFF807: // -ok-
+    case 0x20FFD827: // epg
       break;
     
-    
-    case 20FFEA15: // V+
-      break;
-    
-    case 20FF1AE5: // V-
-      break;
-    
-    case 20FFAA55: // P+
-      break;
-    
-    case 20FF6A95: // P-
-      break;
-    
-    case 20FF20DF: // tv/radio
-      break;
-    
-    case 20FF7A85: // sat
+    case 0x20FFB847: // info
       break;
     
     
-    case 20FFD02F: // red
+    case 0x20FF00FF: // up
       break;
     
-    case 20FFB04F: // green
+    case 0x20FF807F: // down
       break;
     
-    case 20FF708F: // yellow
+    case 0x20FFC03F: // left
       break;
     
-    case 20FFF00F: // blue
+    case 0x20FF40BF: // right
       break;
     
-    
-    case 20FFA05F: // b1
-      break;
-    
-    case 20FFE01F: // b2
-      break;
-    
-    case 20FFE21D: // b3
-      break;
-    
-    case 20FF609F: // b4
-      break;
-    
-    case 20FFC23D: // b5
-      break;
-    
-    case 20FF10EF: // b6
-      break;
-    
-    case 20FF02FD: // b7
-      break;
-    
-    case 20FF42BD: // b8
-      break;
-    
-    case 20FF22DD: // b9
+    case 0x20FFF807: // -ok-
       break;
     
     
-    case FFFFFFFF: // null/repeat
+    case 0x20FFEA15: // V+
+      break;
+    
+    case 0x20FF1AE5: // V-
+      break;
+    
+    case 0x20FFAA55: // P+
+      break;
+    
+    case 0x20FF6A95: // P-
+      break;
+    
+    case 0x20FF20DF: // tv/radio
+      break;
+    
+    case 0x20FF7A85: // sat
+      break;
+    
+    
+    case 0x20FFD02F: // red
+      break;
+    
+    case 0x20FFB04F: // green
+      break;
+    
+    case 0x20FF708F: // yellow
+      break;
+    
+    case 0x20FFF00F: // blue
+      break;
+    
+    
+    case 0x20FFA05F: // b1
+      break;
+    
+    case 0x20FFE01F: // b2
+      break;
+    
+    case 0x20FFE21D: // b3
+      break;
+    
+    case 0x20FF609F: // b4
+      break;
+    
+    case 0x20FFC23D: // b5
+      break;
+    
+    case 0x20FF10EF: // b6
+      break;
+    
+    case 0x20FF02FD: // b7
+      break;
+    
+    case 0x20FF42BD: // b8
+      break;
+    
+    case 0x20FF22DD: // b9
+      break;
+    
+    
+    case 0xFFFFFFFF: // null/repeat
       break;
     
     default:
