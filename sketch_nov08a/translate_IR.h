@@ -145,7 +145,9 @@ void translateIR(){
       break;
     
     default:
-      Serial.println(results.value, HEX);
+      if(debug == true){
+        Serial.println(results.value, HEX);
+      }
       break;
   }
   delay(20);
