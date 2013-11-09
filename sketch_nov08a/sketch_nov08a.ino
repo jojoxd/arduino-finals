@@ -9,6 +9,7 @@ decode_results results;
 Servo myservo;
 
 /*                               */
+#include "functions.h"
 #include "translate_IR.h"
 
 #include "setup.h"
