@@ -14,7 +14,8 @@ void translateIR(){
       break;
     case 0x20FF30CF: // mute
       break;
-      
+    
+    
     case 0x20FF8877: // 1
       break;
       
@@ -101,6 +102,10 @@ void translateIR(){
     
     
     case 0x20FFD02F: // red
+      Serial.println(". -> red");
+      moveServo();
+      moveServo(180);
+      moveServo();
       break;
     
     case 0x20FFB04F: // green
@@ -114,12 +119,42 @@ void translateIR(){
     
     
     case 0x20FFA05F: // b1
+      Serial.print(". -> b1 -> ");
+      IsOn2 = !IsOn2;
+      if(IsOn2 == true){
+        Serial.println("IsOn2 == true");
+        digitalWrite(frev_relay, HIGH);
+      }
+      else{
+        Serial.println("IsOn2 == false");
+        digitalWrite(frev_relay, LOW);
+      }
       break;
     
     case 0x20FFE01F: // b2
+      Serial.print(". -> b2 -> ");
+      IsOn3 = !IsOn3;
+      if(IsOn3 == true){
+        Serial.println("IsOn3 == true");
+        digitalWrite(left_relay, HIGH);
+      }
+      else{
+        Serial.println("IsOn3 == false");
+        digitalWrite(left_relay, LOW);
+      }
       break;
     
     case 0x20FFE21D: // b3
+      Serial.print(". -> b3 -> ");
+      IsOn4 = !IsOn4;
+      if(IsOn4 == true){
+        Serial.println("IsOn4 == true");
+        digitalWrite(right_relay, HIGH);
+      }
+      else{
+        Serial.println("IsOn4 == false");
+        digitalWrite(right_relay, LOW);
+      }
       break;
     
     case 0x20FF609F: // b4

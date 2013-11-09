@@ -3,9 +3,9 @@
 || - mostly used for remote      ||
 || control                       */
 
-void moveServo(int pos1 = 0){
+void moveServo(int pos1 = 0, int delayMS1 = 750){
   myservo.write(pos1);
-  delay(20);
+  delay(delayMS1);
 }
 
 void setRelay(boolean lr, boolean rr, boolean fwrd, int delayMS = 0){
