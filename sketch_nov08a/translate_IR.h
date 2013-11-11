@@ -1,6 +1,10 @@
 void translateIR(){
   switch(results.value){
     case 0x20FF50AF: // on/off
+      toggle(IsOn, 13, "on/off");
+      
+      
+      /*
       Serial.print(". -> On/Off -> ");
       IsOn = !IsOn;
       if(IsOn == true){
@@ -10,7 +14,7 @@ void translateIR(){
       else{
         Serial.println("IsOn == false");
         digitalWrite(13, LOW);
-      }
+      } */
       break;
     case 0x20FF30CF: // mute
       break;
