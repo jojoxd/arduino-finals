@@ -28,7 +28,7 @@ void setRelay(boolean lr, boolean rr, boolean fwrd, int delayMS = 0){
     digitalWrite(frev_relay, HIGH);
   }
 }
-
+/*
 void toggle(bool, pin, button = "null"){
   bool = !bool;
   Serial.print(". -> "); Serial.println(button); Serial.print(" -> ");
@@ -41,3 +41,4 @@ void toggle(bool, pin, button = "null"){
     digitalWrite(pin, LOW);
   }
 }
+*/
