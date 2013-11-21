@@ -1,4 +1,9 @@
-nov_08a-the-final-project
-=========================
+Arduino Robot project
+=====================
 
-the final school project for exam this year. #arduino
+## usage: ##
+###### functions @ functions.h ######
+
+```Objective-C
+moveServo(position, [delay]);
+```
