@@ -1,7 +1,7 @@
 void translateIR(){
   switch(results.value){
     case 0x20FF50AF: // on/off
-      toggle(IsOn, 13, "on/off");
+      toggle(boolean IsOn, 13, "on/off");
       
       
       /*
@@ -123,8 +123,9 @@ void translateIR(){
     
     
     case 0x20FFA05F: // b1
-      Serial.print(". -> b1 -> ");
-      IsOn2 = !IsOn2;
+      toggle(boolean IsOn2, frev_relay, "b1");
+      /*Serial.print(". -> b1 -> ");
+      //IsOn2 = !IsOn2;
       if(IsOn2 == true){
         Serial.println("IsOn2 == true");
         digitalWrite(frev_relay, HIGH);
@@ -132,11 +133,12 @@ void translateIR(){
       else{
         Serial.println("IsOn2 == false");
         digitalWrite(frev_relay, LOW);
-      }
+      }*/
       break;
     
     case 0x20FFE01F: // b2
-      Serial.print(". -> b2 -> ");
+      toggle(boolean IsOn3, left_relay, "b2");
+      /*Serial.print(". -> b2 -> ");
       IsOn3 = !IsOn3;
       if(IsOn3 == true){
         Serial.println("IsOn3 == true");
@@ -145,11 +147,12 @@ void translateIR(){
       else{
         Serial.println("IsOn3 == false");
         digitalWrite(left_relay, LOW);
-      }
+      }*/
       break;
     
-    case 0x20FFE21D: // b3
-      Serial.print(". -> b3 -> ");
+    case 0x20FFE21D: // b3\
+      toggle(boolean IsOn4, right_relay, "b3");
+      /*Serial.print(". -> b3 -> ");
       IsOn4 = !IsOn4;
       if(IsOn4 == true){
         Serial.println("IsOn4 == true");
@@ -158,7 +161,7 @@ void translateIR(){
       else{
         Serial.println("IsOn4 == false");
         digitalWrite(right_relay, LOW);
-      }
+      }*/
       break;
     
     case 0x20FF609F: // b4
@@ -181,6 +184,7 @@ void translateIR(){
     
     
     case 0xFFFFFFFF: // null/repeat
+      Serial.println("-> repeat");
       break;
     
     default:

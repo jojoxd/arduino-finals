@@ -9,11 +9,6 @@ const int left_relay = 3;
 const int frev_relay = 4;
 
 /* declare variables             */
-boolean IsOn = false;
-boolean IsOn1 = false;
-boolean IsOn2 = false;
-boolean IsOn3 = false;
-boolean IsOn4 = false;
 int pos = 0;
 boolean debug = true;
 
