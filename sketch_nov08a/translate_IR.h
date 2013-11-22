@@ -1,21 +1,9 @@
 void translateIR(){
   switch(results.value){
     case 0x20FF50AF: // on/off
-      toggle(boolean IsOn, 13, "on/off");
-      
-      
-      /*
-      Serial.print(". -> On/Off -> ");
-      IsOn = !IsOn;
-      if(IsOn == true){
-        Serial.println("IsOn == true");
-        digitalWrite(13, HIGH);
-      }
-      else{
-        Serial.println("IsOn == false");
-        digitalWrite(13, LOW);
-      } */
+      toggle(IsOn, 13, "on/off");
       break;
+      
     case 0x20FF30CF: // mute
       break;
     
@@ -123,45 +111,15 @@ void translateIR(){
     
     
     case 0x20FFA05F: // b1
-      toggle(boolean IsOn2, frev_relay, "b1");
-      /*Serial.print(". -> b1 -> ");
-      //IsOn2 = !IsOn2;
-      if(IsOn2 == true){
-        Serial.println("IsOn2 == true");
-        digitalWrite(frev_relay, HIGH);
-      }
-      else{
-        Serial.println("IsOn2 == false");
-        digitalWrite(frev_relay, LOW);
-      }*/
+      toggle(IsOn2, frev_relay, "b1");
       break;
     
     case 0x20FFE01F: // b2
-      toggle(boolean IsOn3, left_relay, "b2");
-      /*Serial.print(". -> b2 -> ");
-      IsOn3 = !IsOn3;
-      if(IsOn3 == true){
-        Serial.println("IsOn3 == true");
-        digitalWrite(left_relay, HIGH);
-      }
-      else{
-        Serial.println("IsOn3 == false");
-        digitalWrite(left_relay, LOW);
-      }*/
+      toggle(IsOn3, left_relay, "b2");
       break;
     
     case 0x20FFE21D: // b3\
-      toggle(boolean IsOn4, right_relay, "b3");
-      /*Serial.print(". -> b3 -> ");
-      IsOn4 = !IsOn4;
-      if(IsOn4 == true){
-        Serial.println("IsOn4 == true");
-        digitalWrite(right_relay, HIGH);
-      }
-      else{
-        Serial.println("IsOn4 == false");
-        digitalWrite(right_relay, LOW);
-      }*/
+      toggle(IsOn4, right_relay, "b3");
       break;
     
     case 0x20FF609F: // b4
@@ -189,7 +147,7 @@ void translateIR(){
     
     default:
       if(debug == true){
-        Serial.println(results.value, HEX);
+        Serial.print("error: unknown button: "); Serial.println(results.value, HEX);
       }
       break;
   }

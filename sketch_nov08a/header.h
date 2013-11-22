@@ -12,6 +12,12 @@ const int frev_relay = 4;
 int pos = 0;
 boolean debug = true;
 
+/* declare toggle variables      */
+boolean IsOn = false;
+boolean IsOn2 = false;
+boolean IsOn3 = false;
+boolean IsOn4 = false;
+
 const String version_header = "1.1";
 const String version_loop = "1.2";
 const String version_setup = "1.2";

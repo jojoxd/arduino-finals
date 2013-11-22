@@ -28,20 +28,6 @@ void setRelay(boolean lr, boolean rr, boolean fwrd, int delayMS = 0){
     digitalWrite(frev_relay, HIGH);
   }
 }
-/*
-void toggle(boolean bool, int pin, String button){
-  bool = !bool;
-  Serial.print(". -> "); Serial.println(button); Serial.print(" -> ");
-  if(bool == true){
-    Serial.println(button + " == ON");
-    digitalWrite(pin, HIGH);
-  }
-  else{
-    Serial.println(button + " == OFF");
-    digitalWrite(pin, LOW);
-  }
-}
-*/
 
 void toggle(boolean switchbool, int pin, String button = "error1"){
   if(button == "error1"){
