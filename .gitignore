@@ -1,0 +1,11 @@
+# files NOT to include in github #
+##################################
+_*
+
+# OS Genned files                #
+##################################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+Thumbs.db
