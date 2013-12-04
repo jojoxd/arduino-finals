@@ -22,6 +22,7 @@ toggle(pin, "string/name from button");
 ###### translateIR @ translate_IR.h ######
 switch for the remote control; not much to explain here.
 
+## Libraries ##
 ###### You need these libraries ######
 http://playground.arduino.cc/Code/DigitalToggle (#include "DigitalToggle")
 
