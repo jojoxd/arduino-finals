@@ -6,6 +6,9 @@ void setup(){
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   myservo.attach(7);
+  moveServo();
+  moveServo(180);
+  moveServo();
   Serial.println("setup complete (project: sketch_nov08a):");
   Serial.print(" - running using header version: "); Serial.println(version_header);
   Serial.print(" - running using loop version:   "); Serial.println(version_loop);

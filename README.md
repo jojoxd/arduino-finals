@@ -4,14 +4,19 @@ Arduino Robot project
 ## usage: ##
 ###### functions @ functions.h ######
 
-move Servo:
+Move Servo:
 ```Objective-C
 moveServo(position, [delay]);
 ```
 
-set the relay to move left, right; forward, backward:
+Set the relay to move left, right; forward, backward:
 ```Objective-C
 setRelay(leftrelay, rightrelay, directionrelay, [delay]);
+```
+
+Toggle a pin:
+```Objective-C
+toggle(pin, "string/name from button");
 ```
 
 ###### translateIR @ translate_IR.h ######

@@ -10,15 +10,11 @@ const int frev_relay = 4;
 
 /* declare variables             */
 int pos = 0;
-boolean debug = true;
+boolean debug = false;
+String last = "undefined";
 
-/* declare toggle variables      */
-boolean IsOn = false;
-boolean IsOn2 = false;
-boolean IsOn3 = false;
-boolean IsOn4 = false;
-
-const String version_header = "1.1";
-const String version_loop = "1.2";
-const String version_setup = "1.2";
-const String version_translate_IR = "1.4";
+/* declare all version strings   */
+const String version_header = "2.0";
+const String version_loop = "2.0";
+const String version_setup = "2.0";
+const String version_translate_IR = "2.0";

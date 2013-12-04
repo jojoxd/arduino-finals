@@ -29,18 +29,7 @@ void setRelay(boolean lr, boolean rr, boolean fwrd, int delayMS = 0){
   }
 }
 
-void toggle(boolean switchbool, int pin, String button = "error1"){
-  if(button == "error1"){
-    Serial.println("error: 1; button not specified!");
-  }
-  switchbool != switchbool;
-  Serial.print(". -> " + button + " -> ");
-  if(switchbool == true){
-    Serial.println(button + " == ON!");
-    digitalWrite(pin, HIGH);
-  }
-  else{
-    Serial.println(button + " == OFF!");
-    digitalWrite(pin, LOW);
-  }
+void toggle(int pin, String button = "UNDEFINED: PLEASE DEFINE BUTTON IN CALL"){
+  Serial.println(". -> " + button + " -> toggled!");
+  digitalToggle(pin);
 }

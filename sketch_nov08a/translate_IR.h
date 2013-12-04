@@ -1,7 +1,8 @@
 void translateIR(){
   switch(results.value){
     case 0x20FF50AF: // on/off
-      toggle(IsOn, 13, "on/off");
+      toggle(13, "led_13");
+      last = "on/off";
       break;
       
     case 0x20FF30CF: // mute
@@ -94,6 +95,7 @@ void translateIR(){
     
     
     case 0x20FFD02F: // red
+      last = "red";
       Serial.println(". -> red");
       moveServo();
       moveServo(180);
@@ -111,15 +113,21 @@ void translateIR(){
     
     
     case 0x20FFA05F: // b1
-      toggle(IsOn2, frev_relay, "b1");
+      last = "b1";
+      //toggle(IsOn2, frev_relay, "b1");
+      toggle(frev_relay, "b1");
       break;
     
     case 0x20FFE01F: // b2
-      toggle(IsOn3, left_relay, "b2");
+      last = "b2";
+      //toggle(IsOn3, left_relay, "b2");
+      toggle(left_relay, "b2");
       break;
     
-    case 0x20FFE21D: // b3\
-      toggle(IsOn4, right_relay, "b3");
+    case 0x20FFE21D: // b3
+      last = "b3";
+      //toggle(IsOn4, right_relay, "b3");
+      toggle(right_relay, "b3");
       break;
     
     case 0x20FF609F: // b4
@@ -142,7 +150,7 @@ void translateIR(){
     
     
     case 0xFFFFFFFF: // null/repeat
-      Serial.println("-> repeat");
+      Serial.println("-> repeat " + last + " /NULL");
       break;
     
     default:
