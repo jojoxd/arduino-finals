@@ -23,8 +23,6 @@ toggle(pin, "string/name from button");
 switch for the remote control; not much to explain here.
 
 ###### You need these libraries ######
-```
-«#include "DigitalToggle"«http://playground.arduino.cc/Code/DigitalToggle»
+http://playground.arduino.cc/Code/DigitalToggle (#include "DigitalToggle")
 
-«#include "IR-Remote"«http://github.com/shirriff/Arduino-IRremote»
-```
+http://github.com/shirriff/Arduino-IRremote (#include "IR-Remote")
