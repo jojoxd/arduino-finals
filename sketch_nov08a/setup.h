@@ -1,5 +1,6 @@
 void setup(){
   Serial.begin(9600);
+  step1.setSpeed(60); // Set stepper speed to 60rpm
   irrecv.enableIRIn();
   pinMode(13, OUTPUT);
   pinMode(2, OUTPUT);

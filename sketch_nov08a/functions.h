@@ -29,7 +29,16 @@ void setRelay(boolean lr, boolean rr, boolean fwrd, int delayMS = 0){
   }
 }
 
-void toggle(int pin, String button = "UNDEFINED: PLEASE DEFINE BUTTON IN CALL"){
+void toggle(int pin, String button = "UNDEFINED: PLEASE DEFINE BUTTON IN CALL: <toggle>"){
   Serial.println(". -> " + button + " -> toggled!");
   digitalToggle(pin);
+}
+
+void moveStep1(boolean clockWise, int revolution){
+  if(clockWise == true){
+    step1.step(revolution);
+  }
+  else{
+    step1.step(-revolution);
+  }
 }
