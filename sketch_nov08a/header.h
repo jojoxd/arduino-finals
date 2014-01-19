@@ -1,6 +1,6 @@
 /* header file for sketch_nov08a ||
 || import needed libraries:      */
-#include "Arduino.h"
+#include <Arduino.h>
 
 /* declare constants:            */
 const int receiver = 11;
@@ -21,7 +21,7 @@ const int stepsPerRev = 200;
 
 
 /* declare all version strings   */
-const String version_header = "2.1";
+const String version_header = "2.2";
 const String version_loop = "2.1";
 const String version_setup = "2.1";
-const String version_translate_IR = "2.1";
+const String version_translate_IR = "2.2";

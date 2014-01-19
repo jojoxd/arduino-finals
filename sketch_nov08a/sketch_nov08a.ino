@@ -1,9 +1,9 @@
 /* import needed libraries       */
 #include "header.h"
-#include "Stepper.h"
-#include "IRremote.h"
-#include "Servo.h"
-#include "DigitalToggle.h"
+#include <Stepper.h>
+#include <IRremote.h>
+#include <Servo.h>
+#include <DigitalToggle.h>
 
 /* declare objects:              */
 IRrecv irrecv(receiver);
