@@ -42,3 +42,12 @@ void moveStep1(boolean clockWise, int revolution){
     step1.step(-revolution);
   }
 }
+
+void inUse(boolean use){
+  if(use == true){
+    inUse = true;
+  }
+  else if(use == false){
+    inUse = false;
+  }
+}
