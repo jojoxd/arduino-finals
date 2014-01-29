@@ -6,7 +6,7 @@
 const int receiver = 11;
 const int right_relay = 2;
 const int left_relay = 3;
-const int frev_relay = 4;
+const int frev_relay = 4; 
 const int stepPin1 = 5;
 const int stepPin2 = 6;
 const int stepPin3 = 7;

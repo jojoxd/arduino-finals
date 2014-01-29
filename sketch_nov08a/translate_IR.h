@@ -152,6 +152,7 @@ void translateIR(){
       moveServo();
       moveServo(180);
       moveServo();
+      pos= 0;
       break;
     
     case 0x20FFB04F: // green
@@ -208,5 +209,5 @@ void translateIR(){
       }
       break;
   }
-  delay(20);
+  //delay(10);
 }
