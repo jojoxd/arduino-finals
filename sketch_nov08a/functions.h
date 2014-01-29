@@ -43,11 +43,11 @@ void moveStep1(boolean clockWise, int revolution){
   }
 }
 
-void inUse(boolean use){
+boolean inUse(boolean use){
   if(use == true){
-    inUse = true;
+    return true;
   }
   else if(use == false){
-    inUse = false;
+    return false;
   }
 }

@@ -73,23 +73,77 @@ void translateIR(){
     case 0x20FFF807: // -ok-
       break;
     
-    
+    // Servo Control
     case 0x20FFEA15: // V+
+      Serial.println(". -> V+");
+      if(pos >= 179){
+        Serial.println(". -> V+: BROKEN"); Serial.println(pos);
+        break;
+      }
+      else{
+        pos += 1;
+        moveServo(pos);
+      }
       break;
     
     case 0x20FF1AE5: // V-
+      Serial.println(". -> V-");
+      if(pos <= 1){
+        Serial.println(". -> V-: BROKEN"); Serial.println(pos);
+        break;
+      }
+      else{
+        pos -= 1;
+        moveServo(pos);
+      }
       break;
     
     case 0x20FFAA55: // P+
+      Serial.println(". -> P+");
+      if(pos >= 130){
+        Serial.println(". -> P+: BROKEN"); Serial.println(pos);
+        break;
+      }
+      else{
+        pos+= 50;
+        moveServo(pos);
+      }
       break;
     
     case 0x20FF6A95: // P-
+      Serial.println(". -> P-");
+      if(pos <= 50){
+        Serial.print(". -> P-: BROKEN"); Serial.println(pos);
+        break;
+      }
+      else{
+        pos -= 50;
+        moveServo(pos);
+      }
       break;
     
     case 0x20FF20DF: // tv/radio
+      Serial.println(". -> tv/radio");
+      if(pos >= 170){
+        Serial.println(". -> tv/radio: BROKEN"); Serial.println(pos);
+        break;
+      }
+      else{
+        pos += 10;
+        moveServo(pos);
+      }
       break;
     
     case 0x20FF7A85: // sat
+      Serial.println(". -> sat");
+      if(pos <= 10){
+        Serial.println(". -> sat: BROKEN"); Serial.println(pos);
+        break;
+      }
+      else{
+        pos -= 10;
+        moveServo(pos);
+      }
       break;
     
     

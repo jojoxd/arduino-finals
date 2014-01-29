@@ -18,7 +18,7 @@ int pos = 0;
 boolean debug = false;
 String last = "undefined";
 const int stepsPerRev = 200;
-boolean inUse = true;
+boolean used = false;
 
 
 /* declare all version strings   */
